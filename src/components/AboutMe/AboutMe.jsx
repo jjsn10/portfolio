@@ -6,7 +6,7 @@ const AboutMe = () => {
       <section className="lg:grid grid-cols-8 gap-2">
         <div className="col-span-4 p-8">
           <h1 className="font-bold text-2xl py-8 px-8">
-            I am Jane. I live in New York City, Where I develop the future.
+            I am Jared. I live in Lehi Utah, Where I develop the future.
           </h1>
           <p className="py-4 px-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
