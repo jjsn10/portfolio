@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <header>
           <Navbar
             options={[
-              { path: "/", label: "Home" },
+              { path: "/portfolio", label: "Home" },
               { path: "/portfolio/about", label: "About" },
               { path: "/portfolio/projects", label: "Projects" },
               { path: "/portfolio/uses", label: "Uses" },
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
 
         <Footer
           links={[
-            { url: "/", title: "Home" },
+            { url: "/portfolio", title: "Home" },
             { url: "/portfolio/about", title: "About" },
             { url: "/portfolio/projects", title: "Projects" },
             { url: "/portfolio/uses", title: "Uses" },
