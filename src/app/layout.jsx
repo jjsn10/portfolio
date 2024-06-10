@@ -18,9 +18,9 @@ export default function RootLayout({ children }) {
           <Navbar
             options={[
               { path: "/", label: "Home" },
-              { path: "/about", label: "About" },
-              { path: "/projects", label: "Projects" },
-              { path: "/uses", label: "Uses" },
+              { path: "/portfolio/about", label: "About" },
+              { path: "/portfolio/projects", label: "Projects" },
+              { path: "/portfolio/uses", label: "Uses" },
             ]}
           />
         </header>
