@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import Image from "next/image";
 
 /* TODO:
   Fill out this component according to the README.
@@ -13,7 +14,7 @@ const WorkWidget = ({ title, content, experiences }) => {
         {experiences.map((experience, index) => (
           <li className="py-2" key={index} data-testid={`workWidgetItem${index}`}>
             <div className="flex items-center">
-              <img className="w-1/8" data-testid={`workWidgetItemLogo${index}`} src={experience.logo} alt={`Item${index} Logo`} />
+            <Image className="w-1/8" data-testid={`workWidgetItemLogo${index}`}  width={80} height={80} src={`${experience.logo}`} alt={`Item${index} Logo`}/>
               <div className="w-full">
                 <h3 className="font-bold" data-testid={`workWidgetItemTitle${index}`}>{experience.organization}</h3>
                 <div className="flex items-center justify-between">

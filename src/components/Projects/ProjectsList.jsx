@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import Image from "next/image";
 
 const ProjectsList = ({ title, summary, items = [] }) => {
   return (
@@ -15,14 +16,15 @@ const ProjectsList = ({ title, summary, items = [] }) => {
 
       <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
         {items.map((item, index) => (
-          <li key={index} class="bg-white-100 rounded-lg p-6 flex flex-col items-start">
+          <li key={index} className="bg-white-100 rounded-lg p-6 flex flex-col items-start">
             <div class="flex items-center mb-4">
-              <img class="w-16 h-16 mr-4" src={item.logo} alt={item.company} />
-              <h4 class="text-lg font-bold text-gray-900">{item.company}</h4>
+            <Image className="w-16 h-16 mr-4" width={80} height={80} src={`/${item.logo}`} alt={`${item.company}`}/>
+            
+              <h4 className="text-lg font-bold text-gray-900">{item.company}</h4>
             </div>
-            <p class="text-gray-700 mb-4">{item.description}</p>
+            <p className="text-gray-700 mb-4">{item.description}</p>
             <a href={item.link} class="text-blue-500 flex items-center text-sm">
-              <img class="w-4 h-4 mr-2" src="/link.svg" alt="link icon" />
+            <Image className="w-4 h-4 mr-2" width={80} height={80} src="/link.svg" alt="link icon"/>
               {item.link}
             </a>
           </li>

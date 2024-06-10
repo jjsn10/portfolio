@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import Image from "next/image";
 
 /* TODO:
   Fill out this component according to the README.
@@ -14,7 +15,7 @@ const SkillsWidget = ({ title, content, skills }) => {
           skills.map((skill, index) => (
             <li className="py-4" key={index} data-testid={`skillsWidgetItem${index}`}>
               <div className="flex item-center">
-                <img data-testid={`skillsWidgetItemLogo${index}`} src={`/${skill.icon}`} alt={`${skill.name} Icon`} />
+                <Image data-testid={`skillsWidgetItemLogo${index}`} width={80} height={80} src={`/${skill.icon}`} alt={`${skill.name} Icon`}/>
                 <div className="w-full">
                   <h3 className="font-bold" data-testid={`skillsWidgetItemName${index}`}>{skill.name}</h3>
                   <div className="flex-start flex h-8 w-full overflow-hidden rounded bg-slate-200 font-sans text-xs font-medium">

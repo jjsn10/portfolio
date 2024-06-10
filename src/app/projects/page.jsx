@@ -25,7 +25,7 @@ const project = {
     },
 
     {
-      logo: "/Netflix.png",
+      logo: "Netflix.png",
       company: "Netflix",
       description:
         "Develop a personalized recommendation system for Netflix using machine learning to enhance user experience and increase engagement.",
@@ -33,7 +33,7 @@ const project = {
     },
 
     {
-      logo: "/Duolingo.png",
+      logo: "Duolingo.png",
       company: "DuoLingo",
       description:
         "Develop an interactive web app for Duolingo users to track progress, set goals, and compete on leaderboards using Duolingo's API..",
