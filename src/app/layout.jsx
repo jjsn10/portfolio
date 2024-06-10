@@ -29,9 +29,9 @@ export default function RootLayout({ children }) {
         <Footer
           links={[
             { url: "/", title: "Home" },
-            { url: "/about", title: "About" },
-            { url: "/projects", title: "Projects" },
-            { url: "/uses", title: "Uses" },
+            { url: "/portfolio/about", title: "About" },
+            { url: "/portfolio/projects", title: "Projects" },
+            { url: "/portfolio/uses", title: "Uses" },
           ]}
         />
       </body>
